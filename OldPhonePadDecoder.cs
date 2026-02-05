@@ -34,7 +34,7 @@ namespace IronSoftwareCodingChallenge
 
 
         // Main method to decode the input string
-        public static string OldPhonePad(string input)
+        public static string OldPhonePadDecoder(string input)
         {
             var result = new StringBuilder();
 
