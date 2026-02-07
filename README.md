@@ -55,17 +55,9 @@ Special characters:
 4. Use modulo arithmetic to cycle through characters safely:
 
    ```csharp
-   index = (count - 1) % letters.Length;
+	index = (count - 1) % letters.Length;
+   ```
 
-Project Structure
----
-```
-IronSoftwareCodingChallenge/
-│
-├── OldPhonePadConverter.cs
-├── Program.cs
-└── README.md
-```
 How to Run
 ---
 Clone the repository:
@@ -75,7 +67,44 @@ git clone https://github.com/PhilipHousdens/IronSoftwareCodingChallenge.git
 
 Open the project in Visual Studio or VS Code.
 
-Build and run the project:
+---
+## Test Coverage
+Unit tests are implemented using xUnit in a dedicated test project:
+
 ```
-dotnet run
+IronSoftwareCodingChallenge.Tests/
+```
+### Test Results
+
+All tests pass successfully:
+
+```
+Total tests: 10
+Passed: 10
+Failed: 0
+Skipped: 0
+```
+Run tests with:
+
+```
+dotnet test IronSoftwareCodingChallenge.Tests/IronSoftwareCodingChallenge.Tests.csproj
+```
+
+
+## Runner
+A console runner project is included to demonstrate usage:
+
+```
+IronSoftwareCodingChallenge.Runner
+```
+Run it with: 
+```
+dotnet run --project IronSoftwareCodingChallenge.Runner
+```
+Sample Output:
+```
+Input: 33# => Output: E
+Input: 227*# => Output: B
+Input: 4433555 555666# => Output: HELLO
+Input: 8 88777444666*664# => Output: TURING
 ```
