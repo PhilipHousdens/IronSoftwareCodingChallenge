@@ -49,7 +49,7 @@ namespace IronSoftwareCodingChallenge.Tests
             var result = OldPhonePadConverter.OldPhonePadDecoder("4433555*#");
 
             // Assert
-            Assert.Equal("HELL", result);
+            Assert.Equal("HE", result);
         }
 
         [Fact]
